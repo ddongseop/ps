@@ -1,2 +1,2 @@
 # ps
-Problem Solving
+Problem Solving Training
