@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 
+# 내림차순, 중복 값이 있을수도 있고 없을수도 있는 경우의 이분탐색
 # 내림차순일 경우 등호 방향만 바뀜
 # 중복 값이 있을 수 있는 경우에도 start로 밀고 나가기
 def find_rate(scores, score):
@@ -12,7 +13,7 @@ def find_rate(scores, score):
             end = mid - 1
         elif score < scores[mid]:
             start = mid + 1
-        else:
+        else: # score == scores[mid]
             start = mid
             break
     

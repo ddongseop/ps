@@ -4,6 +4,7 @@ input = sys.stdin.readline
 P = int(input())
 
 # 이분 탐색으로도 풀 수 있음
+# 오름차순, 중복 값이 없는 경우의 이분탐색
 def find_index(cur, row):
     start, end = 0, len(row)-1
 
@@ -14,9 +15,8 @@ def find_index(cur, row):
             end = mid - 1
         elif cur > row[mid]:
             start = mid + 1
-    
-    return start
 
+    return start
 
 for case in range(1, P+1):
     heights = list(map(int, input().split()))

@@ -8,7 +8,7 @@ costs = list(map(int, input().split())) # N
 pos_costs = []
 for i in range(len(costs)): # 100,000
     pos_costs.append([costs[i], i])
-pos_costs.sort() # 500,000
+pos_costs.sort() # 100,000 * 17
 
 ans = 0
 start = N
