@@ -10,7 +10,7 @@ for _ in range(N): # 2 x 10^5
 
 count = N
 for _ in range(M): # 2 x 10^5
-    used = list(input().strip().split(','))
+    used = list(input().rstrip().split(','))
     for u in used: # 10
         # u in keywords : O(1)
         if u in keywords and keywords[u] == True:
