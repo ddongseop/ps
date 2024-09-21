@@ -33,4 +33,4 @@ if N > 0:
     else:
         print(find_rate(scores, score))
 else:
-    print(1)
+    print(1) 

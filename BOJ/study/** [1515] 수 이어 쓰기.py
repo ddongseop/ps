@@ -5,9 +5,9 @@ string = input().strip()
 N = 1
 cur = 0
 
-while True: # 3,000
+while True: # 30,000
     count = 0
-    for i in range(len(str(N))): # 30,000
+    for i in range(len(str(N))): # 5
         if count == 0 and str(N)[i] == string[cur]: 
             count = 1
             continue
@@ -22,5 +22,5 @@ while True: # 3,000
         cur += count
         if cur >= len(string): break
     N += 1
-
+ 
 print(N)
